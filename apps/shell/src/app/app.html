@@ -1,4 +1,7 @@
-<ul class="remote-menu">
-  <li><a routerLink="/">Home</a></li>
-</ul>
-<router-outlet></router-outlet>
+<mat-toolbar color="primary">
+  <button mat-button routerLink="/">Home</button>
+</mat-toolbar>
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>

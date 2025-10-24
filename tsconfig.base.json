@@ -14,7 +14,17 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "operation_names/Routes": [
+        "apps/tools/operation_names/src/app/remote-entry/entry.routes.ts"
+      ],
+      "vehicle/Routes": [
+        "apps/entities/vehicle/src/app/remote-entry/entry.routes.ts"
+      ],
+      "person/Routes": [
+        "apps/entities/person/src/app/remote-entry/entry.routes.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

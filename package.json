@@ -48,15 +48,18 @@
     "typescript-eslint": "^8.40.0"
   },
   "dependencies": {
+    "@angular/animations": "^20.3.7",
+    "@angular/cdk": "^20.2.10",
     "@angular/common": "~20.3.0",
     "@angular/compiler": "~20.3.0",
     "@angular/core": "~20.3.0",
     "@angular/forms": "~20.3.0",
+    "@angular/material": "^20.2.10",
     "@angular/platform-browser": "~20.3.0",
     "@angular/platform-browser-dynamic": "~20.3.0",
     "@angular/router": "~20.3.0",
+    "@nx/angular": "^22.0.1",
     "rxjs": "~7.8.0",
-    "zone.js": "~0.15.0",
-    "@nx/angular": "^22.0.1"
+    "zone.js": "~0.15.0"
   }
 }

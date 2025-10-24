@@ -1,0 +1,9 @@
+{
+  "name": "vehicle-e2e",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/entities/vehicle-e2e/src",
+  "implicitDependencies": ["vehicle"],
+  "// targets": "to see all targets run: nx show project vehicle-e2e --web",
+  "targets": {}
+}
