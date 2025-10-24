@@ -10,16 +10,6 @@
     <mat-icon>settings</mat-icon>
   </button>
   <mat-menu #settingsMenu="matMenu">
-    <div mat-menu-item>
-      <mat-slide-toggle
-        [(ngModel)]="isDarkTheme"
-        (change)="toggleTheme()"
-        class="theme-toggle"
-      >
-        <mat-icon>{{ isDarkTheme ? 'dark_mode' : 'light_mode' }}</mat-icon>
-        <span>{{ isDarkTheme ? 'Dark' : 'Light' }} Theme</span>
-      </mat-slide-toggle>
-    </div>
     <button mat-menu-item>
       <mat-icon>language</mat-icon>
       <span>Language</span>
