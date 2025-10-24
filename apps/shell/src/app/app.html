@@ -3,6 +3,61 @@
     <mat-icon>menu</mat-icon>
   </button>
   <span>PrimeNG</span>
+  <div class="toolbar-spacer"></div>
+  
+  <!-- Settings Button -->
+  <button mat-icon-button [matMenuTriggerFor]="settingsMenu" aria-label="Settings menu">
+    <mat-icon>settings</mat-icon>
+  </button>
+  <mat-menu #settingsMenu="matMenu">
+    <div mat-menu-item>
+      <mat-slide-toggle
+        [(ngModel)]="isDarkTheme"
+        (change)="toggleTheme()"
+        class="theme-toggle"
+      >
+        <mat-icon>{{ isDarkTheme ? 'dark_mode' : 'light_mode' }}</mat-icon>
+        <span>{{ isDarkTheme ? 'Dark' : 'Light' }} Theme</span>
+      </mat-slide-toggle>
+    </div>
+    <button mat-menu-item>
+      <mat-icon>language</mat-icon>
+      <span>Language</span>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-menu-item>
+      <mat-icon>help</mat-icon>
+      <span>Help</span>
+    </button>
+  </mat-menu>
+
+  <!-- Profile Button -->
+  <button mat-icon-button [matMenuTriggerFor]="profileMenu" aria-label="User profile menu">
+    <mat-icon>account_circle</mat-icon>
+  </button>
+  <mat-menu #profileMenu="matMenu">
+    <div class="profile-header">
+      <mat-icon class="profile-avatar">account_circle</mat-icon>
+      <div class="profile-info">
+        <div class="profile-name">John Doe</div>
+        <div class="profile-email">john.doe@example.com</div>
+      </div>
+    </div>
+    <mat-divider></mat-divider>
+    <button mat-menu-item>
+      <mat-icon>person</mat-icon>
+      <span>My Profile</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>notifications</mat-icon>
+      <span>Notifications</span>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-menu-item>
+      <mat-icon>logout</mat-icon>
+      <span>Sign Out</span>
+    </button>
+  </mat-menu>
 </mat-toolbar>
 
 <mat-sidenav-container class="sidenav-container">
