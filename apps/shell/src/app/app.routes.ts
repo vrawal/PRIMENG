@@ -1,5 +1,5 @@
-import { NxWelcome } from './nx-welcome';
 import { Route } from '@angular/router';
+import { DashboardComponent } from './dashboard.component';
 
 export const appRoutes: Route[] = [
   {
@@ -17,6 +17,6 @@ export const appRoutes: Route[] = [
   },
   {
     path: '',
-    component: NxWelcome,
+    component: DashboardComponent,
   },
 ];
