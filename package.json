@@ -2,7 +2,12 @@
   "name": "@primeng/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build:shell:production": "nx build shell --configuration=production",
+    "build:person:production": "nx build person --configuration=production",
+    "build:vehicle:production": "nx build vehicle --configuration=production",
+    "build:operation_names:production": "nx build operation_names --configuration=production"
+  },
   "private": true,
   "devDependencies": {
     "@angular-devkit/build-angular": "~20.3.0",

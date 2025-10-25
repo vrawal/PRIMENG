@@ -1,0 +1,32 @@
+{
+  "routes": [
+    {
+      "route": "/person/*",
+      "serve": "/person/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/vehicle/*",
+      "serve": "/vehicle/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/operation_names/*",
+      "serve": "/operation_names/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/*",
+      "serve": "/index.html",
+      "statusCode": 200
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/images/*.{png,jpg,gif}", "/css/*", "/*.{css,js}"]
+  },
+  "mimeTypes": {
+    ".json": "text/json",
+    ".js": "text/javascript"
+  }
+}
