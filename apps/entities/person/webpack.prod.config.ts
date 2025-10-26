@@ -6,19 +6,17 @@ import config from './module-federation.config';
  * The DTS Plugin can be enabled by setting dts: true
  * Learn more about the DTS Plugin here: https://module-federation.io/configure/dts.html
  */
-export default withModuleFederation(
-  {
-    ...config,
-    /*
-     * Remote overrides for production.
-     * Each entry is a pair of a unique name and the URL where it is deployed.
-     *
-     * e.g.
-     * remotes: [
-     *   ['app1', 'https://app1.example.com'],
-     *   ['app2', 'https://app2.example.com'],
-     * ]
-     */
+const prodConfig = {
+  ...config,
+};
+
+export default withModuleFederation(prodConfig, {
+  dts: false,
+  library: {
+    type: 'module',
   },
-  { dts: false }
-);
+  output: {
+    uniqueName: 'person',
+    publicPath: 'https://icy-rock-0adac8500.azurestaticapps.net/person/'
+  }
+});

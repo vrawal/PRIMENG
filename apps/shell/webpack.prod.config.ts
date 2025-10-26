@@ -10,9 +10,9 @@ export default withModuleFederation(
   {
     ...config,
     remotes: [
-      ['operation_names', 'https://primeng-app.azurestaticapps.net/operation_names/remoteEntry.js'],
-      ['vehicle', 'https://primeng-app.azurestaticapps.net/vehicle/remoteEntry.js'],
-      ['person', 'https://primeng-app.azurestaticapps.net/person/remoteEntry.js'],
+      ['operation_names', 'https://icy-rock-0adac8500.azurestaticapps.net/operation_names/remoteEntry.js'],
+      ['vehicle', 'https://icy-rock-0adac8500.azurestaticapps.net/vehicle/remoteEntry.js'],
+      ['person', 'https://icy-rock-0adac8500.azurestaticapps.net/person/remoteEntry.js'],
     ],
   },
   { dts: false }
