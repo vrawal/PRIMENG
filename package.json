@@ -34,7 +34,7 @@
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
     "@types/jest": "^29.5.12",
-    "@types/node": "18.16.9",
+    "@types/node": "^24.9.1",
     "@typescript-eslint/utils": "^8.40.0",
     "angular-eslint": "^20.3.0",
     "eslint": "^9.8.0",
@@ -50,7 +50,8 @@
     "ts-node": "10.9.1",
     "tslib": "^2.3.0",
     "typescript": "~5.9.2",
-    "typescript-eslint": "^8.40.0"
+    "typescript-eslint": "^8.40.0",
+    "yaml": "^2.8.1"
   },
   "dependencies": {
     "@angular/animations": "^20.3.7",
