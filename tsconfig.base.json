@@ -23,6 +23,9 @@
       ],
       "person/Routes": [
         "apps/entities/person/src/app/remote-entry/entry.routes.ts"
+      ],
+      "clear_session/Routes": [
+        "apps/tools/clear-session/src/app/remote-entry/entry.routes.ts"
       ]
     }
   },

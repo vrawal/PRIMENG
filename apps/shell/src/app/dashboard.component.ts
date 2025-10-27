@@ -94,6 +94,12 @@ import { FormsModule } from '@angular/forms';
               <mat-icon>settings</mat-icon>
               <span>Operation Names</span>
             </a>
+
+            <!-- Clear Session Shortcut -->
+            <a class="shortcut-link" routerLink="/clear_session">
+              <mat-icon>clear</mat-icon>
+              <span>Clear Session</span>
+            </a>
           </div>
         </mat-card-content>
       </mat-card>

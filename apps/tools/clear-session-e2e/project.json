@@ -1,0 +1,9 @@
+{
+  "name": "clear_session-e2e",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/tools/clear-session-e2e/src",
+  "implicitDependencies": ["clear_session"],
+  "// targets": "to see all targets run: nx show project clear_session-e2e --web",
+  "targets": {}
+}
