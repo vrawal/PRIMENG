@@ -6,17 +6,10 @@ import config from './module-federation.config';
  * The DTS Plugin can be enabled by setting dts: true
  * Learn more about the DTS Plugin here: https://module-federation.io/configure/dts.html
  */
-const prodConfig = {
-  ...config,
-};
-
-export default withModuleFederation(prodConfig, {
-  dts: false,
-  library: {
-    type: 'module',
-  },
-  output: {
-    uniqueName: 'person',
+export default withModuleFederation(
+  {
+    ...config,
     publicPath: 'https://icy-rock-0adac8500.azurestaticapps.net/person/'
-  }
-});
+  },
+  { dts: false }
+);

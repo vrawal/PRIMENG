@@ -1,0 +1,180 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "serve-shell",
+      "type": "shell",
+      "command": "nx serve shell",
+      "isBackground": true,
+      "problemMatcher": {
+        "pattern": {
+          "regexp": "."
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "Building...",
+          "endsPattern": "(Compiled successfully|Failed to compile)"
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "serve-person",
+      "type": "shell",
+      "command": "nx serve person",
+      "isBackground": true,
+      "problemMatcher": {
+        "pattern": {
+          "regexp": "."
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "Building...",
+          "endsPattern": "(Compiled successfully|Failed to compile)"
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "serve-vehicle",
+      "type": "shell",
+      "command": "nx serve vehicle",
+      "isBackground": true,
+      "problemMatcher": {
+        "pattern": {
+          "regexp": "."
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "Building...",
+          "endsPattern": "(Compiled successfully|Failed to compile)"
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "serve-operation-names",
+      "type": "shell",
+      "command": "nx serve operation_names",
+      "isBackground": true,
+      "problemMatcher": {
+        "pattern": {
+          "regexp": "."
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "Building...",
+          "endsPattern": "(Compiled successfully|Failed to compile)"
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "serve-clear-session",
+      "type": "shell",
+      "command": "nx serve clear_session",
+      "isBackground": true,
+      "problemMatcher": {
+        "pattern": {
+          "regexp": "."
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "Building...",
+          "endsPattern": "(Compiled successfully|Failed to compile)"
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "build-shell-production",
+      "type": "shell",
+      "command": "nx build shell --configuration=production",
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "build-person-production",
+      "type": "shell",
+      "command": "nx build person --configuration=production",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "build-vehicle-production",
+      "type": "shell",
+      "command": "nx build vehicle --configuration=production",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "build-operation-names-production",
+      "type": "shell",
+      "command": "nx build operation_names --configuration=production",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "build-clear-session-production",
+      "type": "shell",
+      "command": "nx build clear_session --configuration=production",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "build-all-production",
+      "type": "shell",
+      "command": "nx run-many --target=build --configuration=production --all",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "test-shell",
+      "type": "shell",
+      "command": "nx test shell",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "test-person",
+      "type": "shell",
+      "command": "nx test person",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "test-vehicle",
+      "type": "shell",
+      "command": "nx test vehicle",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "lint-all",
+      "type": "shell",
+      "command": "nx run-many --target=lint --all",
+      "problemMatcher": []
+    }
+  ]
+}

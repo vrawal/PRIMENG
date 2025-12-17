@@ -6,7 +6,12 @@
     "build:shell:production": "nx build shell --configuration=production",
     "build:person:production": "nx build person --configuration=production",
     "build:vehicle:production": "nx build vehicle --configuration=production",
-    "build:operation_names:production": "nx build operation_names --configuration=production"
+    "build:operation_names:production": "nx build operation_names --configuration=production",
+    "analyze:shell": "nx build shell --configuration=production --source-map && source-map-explorer dist/apps/shell/browser/**/*.js",
+    "analyze:person": "nx build person --configuration=production --source-map && source-map-explorer dist/apps/entities/person/browser/**/*.js",
+    "analyze:vehicle": "nx build vehicle --configuration=production --source-map && source-map-explorer dist/apps/entities/vehicle/browser/**/*.js",
+    "analyze:operation_names": "nx build operation_names --configuration=production --source-map && source-map-explorer dist/apps/tools/operation_names/browser/**/*.js",
+    "analyze:all": "npm run analyze:shell && npm run analyze:person && npm run analyze:vehicle && npm run analyze:operation_names"
   },
   "private": true,
   "devDependencies": {
@@ -46,6 +51,7 @@
     "jest-util": "^29.7.0",
     "nx": "22.0.1",
     "prettier": "^2.6.2",
+    "source-map-explorer": "^2.5.3",
     "ts-jest": "^29.1.0",
     "ts-node": "10.9.1",
     "tslib": "^2.3.0",
