@@ -2,13 +2,15 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ButtonModule } from 'primeng/button';
+import { ToastModule } from 'primeng/toast';
 
 @Component({
   standalone: true,
   imports: [
     RouterModule,
     CommonModule,
-    ButtonModule
+    ButtonModule,
+    ToastModule
   ],
   selector: 'app-root',
   templateUrl: './app.html',

@@ -11,6 +11,7 @@ import { appRoutes } from './app.routes';
 import { providePrimeNG } from 'primeng/config';
 import Aura from '@primeuix/themes/aura';
 import { definePreset } from '@primeuix/themes';
+import { MessageService } from 'primeng/api';
 
 const MyPreset = definePreset(Aura, {
     semantic: {
@@ -37,6 +38,7 @@ export const appConfig: ApplicationConfig = {
     provideRouter(appRoutes),
     provideAnimations(),
     provideHttpClient(),
+    MessageService,
     providePrimeNG({
         theme: {
             preset: MyPreset,
