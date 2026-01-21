@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { MatCardModule } from '@angular/material/card';
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatTableModule } from '@angular/material/table';
+import { CardModule } from 'primeng/card';
+import { InputTextModule } from 'primeng/inputtext';
+import { IconFieldModule } from 'primeng/iconfield';
+import { InputIconModule } from 'primeng/inputicon';
+import { ButtonModule } from 'primeng/button';
+import { TableModule } from 'primeng/table';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -15,14 +14,13 @@ import { FormsModule } from '@angular/forms';
   imports: [
     RouterModule,
     CommonModule,
-    MatCardModule,
-    MatInputModule,
-    MatFormFieldModule,
-    MatIconModule,
-    MatButtonModule,
-    MatDividerModule,
+    CardModule,
+    InputTextModule,
+    IconFieldModule,
+    InputIconModule,
+    ButtonModule,
     FormsModule,
-    MatTableModule
+    TableModule
   ],
   selector: 'app-dashboard',
   template: `
@@ -31,102 +29,83 @@ import { FormsModule } from '@angular/forms';
     </div>
     <div class="dashboard-container">
       <!-- Left Panel - Search -->
-      <mat-card class="search-panel">
-        <mat-card-header>
-          <mat-card-title>Cross Domain Search</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <mat-form-field appearance="outline" class="search-field">
-            <mat-label>Search across all domains</mat-label>
-            <input matInput placeholder="Enter search terms" [(ngModel)]="searchQuery">
-            <mat-icon matSuffix>search</mat-icon>
-          </mat-form-field>
+      <p-card header="Cross Domain Search" class="search-panel">
+        <p-iconField iconPosition="right" class="search-field">
+            <p-inputIcon styleClass="pi pi-search"></p-inputIcon>
+            <input pInputText type="text" placeholder="Search across all domains" [(ngModel)]="searchQuery" style="width: 100%" />
+        </p-iconField>
 
-          <!-- Search Results Table -->
-          <div class="search-results-table">
-            <table mat-table [dataSource]="cases" class="mat-elevation-z1">
-              <!-- Domain Column -->
-              <ng-container matColumnDef="domain">
-                <th mat-header-cell *matHeaderCellDef>Domain</th>
-                <td mat-cell *matCellDef="let case">{{case.domain}}</td>
-              </ng-container>
-
-              <!-- Case Number Column -->
-              <ng-container matColumnDef="caseNumber">
-                <th mat-header-cell *matHeaderCellDef>Case Name</th>
-                <td mat-cell *matCellDef="let case">{{case.caseNumber}}</td>
-              </ng-container>
-
-              <!-- Team Leader Column -->
-              <ng-container matColumnDef="teamLeader">
-                <th mat-header-cell *matHeaderCellDef>Team Leader</th>
-                <td mat-cell *matCellDef="let case">{{case.teamLeader}}</td>
-              </ng-container>
-
-              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-            </table>
-          </div>
-        </mat-card-content>
-      </mat-card>
+        <!-- Search Results Table -->
+        <div class="search-results-table">
+          <p-table [value]="cases" [rows]="5" [paginator]="true" class="p-datatable-sm">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Domain</th>
+                    <th>Case Name</th>
+                    <th>Team Leader</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-case>
+                <tr>
+                    <td>{{case.domain}}</td>
+                    <td>{{case.caseNumber}}</td>
+                    <td>{{case.teamLeader}}</td>
+                </tr>
+            </ng-template>
+          </p-table>
+        </div>
+      </p-card>
 
       <!-- Right Panel - Shortcuts -->
-      <mat-card class="shortcuts-panel">
-        <mat-card-header>
-          <mat-card-title>Quick Access</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <div class="shortcuts-grid">
-            <!-- Person Shortcut -->
-            <a class="shortcut-link" routerLink="/person">
-              <mat-icon>person</mat-icon>
-              <span>Person</span>
-            </a>
+      <p-card header="Quick Access" class="shortcuts-panel">
+        <div class="shortcuts-grid">
+          <!-- Person Shortcut -->
+          <a class="shortcut-link" routerLink="/person">
+            <i class="pi pi-user"></i>
+            <span>Person</span>
+          </a>
 
-            <!-- Vehicle Shortcut -->
-            <a class="shortcut-link" routerLink="/vehicle">
-              <mat-icon>directions_car</mat-icon>
-              <span>Vehicle</span>
-            </a>
+          <!-- Vehicle Shortcut -->
+          <a class="shortcut-link" routerLink="/vehicle">
+            <i class="pi pi-car"></i>
+            <span>Vehicle</span>
+          </a>
 
-            <!-- Operation Names Shortcut -->
-            <a class="shortcut-link" routerLink="/operation_names">
-              <mat-icon>settings</mat-icon>
-              <span>Operation Names</span>
-            </a>
+          <!-- Operation Names Shortcut -->
+          <a class="shortcut-link" routerLink="/operation_names">
+            <i class="pi pi-cog"></i>
+            <span>Operation Names</span>
+          </a>
 
-            <!-- Clear Session Shortcut -->
-            <a class="shortcut-link" routerLink="/clear_session">
-              <mat-icon>clear</mat-icon>
-              <span>Clear Session</span>
-            </a>
-          </div>
-        </mat-card-content>
-      </mat-card>
+          <!-- Clear Session Shortcut -->
+          <a class="shortcut-link" routerLink="/clear_session">
+            <i class="pi pi-times-circle"></i>
+            <span>Clear Session</span>
+          </a>
+        </div>
+      </p-card>
     </div>
   `,
   styles: [`
     .welcome-banner {
-      background-color: #f5f5f5;
-    }
-
-    .dark-theme .welcome-banner {
-      background-color: rgba(255, 255, 255, 0.08);
+      background-color: var(--p-content-background);
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      margin-bottom: 24px;
+      box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.02), 0px 0px 2px rgba(0, 0, 0, 0.05), 0px 1px 4px rgba(0, 0, 0, 0.08);
     }
 
     .welcome-banner h1 {
       margin: 0;
       font-size: 24px;
-      font-weight: 400;
-      color: inherit;
+      font-weight: 700;
+      color: var(--p-primary-color);
     }
 
     .dashboard-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 24px;
-      padding: 24px;
-      height: calc(100vh - 64px - 48px); /* Viewport height minus toolbar and padding */
     }
 
     .search-panel, .shortcuts-panel {
@@ -135,14 +114,13 @@ import { FormsModule } from '@angular/forms';
 
     .search-field {
       width: 100%;
-      margin-top: 16px;
+      margin-top: 8px;
     }
 
     .shortcuts-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
       gap: 16px;
-      padding: 16px 0;
     }
 
     .shortcut-link {
@@ -150,77 +128,49 @@ import { FormsModule } from '@angular/forms';
       flex-direction: column;
       align-items: center;
       padding: 24px;
-      border-radius: 8px;
-      background-color: rgba(0, 0, 0, 0.04);
-      transition: all 0.3s ease;
+      border-radius: 12px;
+      background-color: var(--p-content-background);
+      border: 1px solid var(--p-content-border-color);
+      transition: all 0.2s;
       text-decoration: none;
-      color: inherit;
-    }
-
-    .dark-theme .shortcut-link {
-      background-color: rgba(255, 255, 255, 0.08);
+      color: var(--p-text-color);
     }
 
     .shortcut-link:hover {
-      background-color: rgba(0, 0, 0, 0.08);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: var(--p-highlight-background);
+      border-color: var(--p-primary-color);
+      transform: translateY(-4px);
     }
 
-    .dark-theme .shortcut-link:hover {
-      background-color: rgba(255, 255, 255, 0.12);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    }
-
-    .shortcut-link mat-icon {
-      font-size: 32px;
-      height: 32px;
-      width: 32px;
-      margin-bottom: 8px;
+    .shortcut-link i {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--p-primary-color);
     }
 
     .shortcut-link span {
-      font-size: 16px;
-    }
-
-    mat-card-header {
-      margin-bottom: 16px;
-    }
-
-    mat-card-title {
-      font-size: 20px;
-      font-weight: 500;
+      font-size: 1rem;
+      font-weight: 600;
     }
 
     .search-results-table {
       margin-top: 24px;
-      width: 100%;
-      overflow: auto;
     }
 
-    .search-results-table table {
-      width: 100%;
+    :host ::ng-deep .p-card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
-    .mat-mdc-row:nth-child(even) {
-      background-color: rgba(0, 0, 0, 0.02);
+    :host ::ng-deep .p-card-body {
+        flex: 1;
     }
 
-    .dark-theme .mat-mdc-row:nth-child(even) {
-      background-color: rgba(255, 255, 255, 0.04);
-    }
-
-    .mat-mdc-row:hover {
-      background-color: rgba(0, 0, 0, 0.04);
-    }
-
-    .dark-theme .mat-mdc-row:hover {
-      background-color: rgba(255, 255, 255, 0.08);
-    }
-
-    th.mat-mdc-header-cell {
-      font-weight: 600;
-      color: inherit;
+    @media (max-width: 1200px) {
+        .dashboard-container {
+            grid-template-columns: 1fr;
+        }
     }
   `]
 })

@@ -55,17 +55,11 @@ export default [
             'object',
             'unknown',
           ],
-          customGroups: {
-            value: {
-              angular: '@angular/**',
-              ngrx: '@ngrx/**',
-            },
-          },
-          newlinesBetween: 'always',
+          newlinesBetween: 'ignore',
           internalPattern: ['^@primeng/**', '^@app/**', '^@env/**'],
         },
       ],
-      
+
       // Class members sorting - Angular best practices
       'perfectionist/sort-classes': [
         'error',

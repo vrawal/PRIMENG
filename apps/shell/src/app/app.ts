@@ -1,30 +1,14 @@
-import { Component, HostBinding } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { MatButtonModule } from '@angular/material/button';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatListModule } from '@angular/material/list';
-import { MatIconModule } from '@angular/material/icon';
-import { MatExpansionModule } from '@angular/material/expansion';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   standalone: true,
   imports: [
     RouterModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatListModule,
-    MatIconModule,
-    MatExpansionModule,
-    MatMenuModule,
-    MatDividerModule,
-    MatSlideToggleModule,
-    FormsModule
+    CommonModule,
+    ButtonModule
   ],
   selector: 'app-root',
   templateUrl: './app.html',
@@ -34,16 +18,15 @@ export class App {
   protected title = 'shell';
   isDarkTheme = false;
 
-  @HostBinding('class.dark-theme') get darkTheme() {
-    return this.isDarkTheme;
-  }
-
   toggleTheme() {
     this.isDarkTheme = !this.isDarkTheme;
-    if (this.isDarkTheme) {
-      document.body.classList.add('dark-theme');
-    } else {
-      document.body.classList.remove('dark-theme');
+    const element = document.querySelector('html');
+    if (element) {
+        if (this.isDarkTheme) {
+            element.classList.add('my-app-dark');
+        } else {
+            element.classList.remove('my-app-dark');
+        }
     }
   }
 }
