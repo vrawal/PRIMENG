@@ -4,13 +4,14 @@ import {
   provideBrowserGlobalErrorListeners,
   provideZoneChangeDetection,
 } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { provideRouter, withPreloading } from '@angular/router';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { provideHttpClient } from '@angular/common/http';
 import { appRoutes } from './app.routes';
 
 import { providePrimeNG } from 'primeng/config';
 import { GlobalErrorHandler } from './global-error.handler';
+import { SafePreloadingStrategy } from './utils/safe-preloading.strategy';
 import Aura from '@primeuix/themes/aura';
 import { definePreset } from '@primeuix/themes';
 import { MessageService } from 'primeng/api';
@@ -38,7 +39,7 @@ export const appConfig: ApplicationConfig = {
     { provide: ErrorHandler, useClass: GlobalErrorHandler },
     provideBrowserGlobalErrorListeners(),
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideRouter(appRoutes),
+    provideRouter(appRoutes, withPreloading(SafePreloadingStrategy)),
     provideAnimations(),
     provideHttpClient(),
     MessageService,

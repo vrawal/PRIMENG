@@ -1,24 +1,55 @@
-import { Route } from '@angular/router';
+import { inject, Route } from '@angular/router';
+import { Router } from '@angular/router';
+import { MessageService } from 'primeng/api';
 import { DashboardComponent } from './dashboard.component';
+import { RemoteErrorComponent } from './remote-error.component';
+import { wrapRemoteLoader } from './utils/remote-loader.util';
 
 export const appRoutes: Route[] = [
   {
     path: 'clear_session',
     loadChildren: () =>
-      import('clear_session/Routes').then((m) => m!.remoteRoutes),
+      wrapRemoteLoader(
+        'clear_session',
+        () => import('clear_session/Routes').then((m) => m!.remoteRoutes),
+        inject(MessageService)
+      )(),
+    canMatch: [
+      () => {
+        return true;
+      },
+    ],
   },
   {
     path: 'person',
-    loadChildren: () => import('person/Routes').then((m) => m!.remoteRoutes),
+    loadChildren: () =>
+      wrapRemoteLoader(
+        'person',
+        () => import('person/Routes').then((m) => m!.remoteRoutes),
+        inject(MessageService)
+      )(),
   },
   {
     path: 'vehicle',
-    loadChildren: () => import('vehicle/Routes').then((m) => m!.remoteRoutes),
+    loadChildren: () =>
+      wrapRemoteLoader(
+        'vehicle',
+        () => import('vehicle/Routes').then((m) => m!.remoteRoutes),
+        inject(MessageService)
+      )(),
   },
   {
     path: 'operation_names',
     loadChildren: () =>
-      import('operation_names/Routes').then((m) => m!.remoteRoutes),
+      wrapRemoteLoader(
+        'operation_names',
+        () => import('operation_names/Routes').then((m) => m!.remoteRoutes),
+        inject(MessageService)
+      )(),
+  },
+  {
+    path: 'error',
+    component: RemoteErrorComponent,
   },
   {
     path: '',

@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ButtonModule } from 'primeng/button';
 import { ToastModule } from 'primeng/toast';
+import { RemoteHealthStatusComponent } from './components/remote-health-status.component';
 
 @Component({
   standalone: true,
@@ -10,7 +11,8 @@ import { ToastModule } from 'primeng/toast';
     RouterModule,
     CommonModule,
     ButtonModule,
-    ToastModule
+    ToastModule,
+    RemoteHealthStatusComponent, // Used in template: <app-remote-health-status>
   ],
   selector: 'app-root',
   templateUrl: './app.html',
