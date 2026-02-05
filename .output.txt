@@ -1,0 +1,383 @@
+
+> nx run operation_names:build:production  [local cache]
+> nx run operation_names:build:production
+⠋ Generating browser application bundles (phase: setup)...    TypeScript compiler options "target" and "useDefineForClassFields" are set to "ES2022" and "false" respectively by the Angular CLI. To control ECMA version and features use the Browserslist configuration. For more information, see https://angular.dev/tools/cli/build#configuring-browser-compatibility
+    NOTE: You can set the "target" to "ES2022" in the project's tsconfig to remove this warning.
+⠙ Generating browser application bundles (phase: setup)...(node:16898) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ Browser application bundle generation complete.
+✔ Copying assets complete.
+✔ Index html generation complete.
+Initial chunk files           | Names                      |  Raw size | Estimated transfer size
+remoteEntry.mjs               | operation_names            | 208.74 kB |                       -
+polyfills.235e8d28326a7696.js | polyfills                  | 117.38 kB |                32.91 kB
+styles.cbbcca7056d0baa4.css   | styles                     | 103.79 kB |                 7.66 kB
+main.184bc8b2fbce7776.js      | main                       |  82.68 kB |                21.77 kB
+                              | Initial total              | 512.60 kB |                62.34 kB
+Lazy chunk files              | Names                      |  Raw size | Estimated transfer size
+295.026f1ffe4c5a3765.js       | -                          | 298.87 kB |                84.94 kB
+615.f0440740f7b0fd74.js       | -                          |  95.11 kB |                23.29 kB
+810.1b7bf866bf88b3f7.js       | -                          |  75.47 kB |                10.56 kB
+705.6d275d4072e5ad86.js       | -                          |  72.45 kB |                18.98 kB
+700.2b213f3a7692b760.js       | -                         [39m[2m |  68.57 kB |                17.77 kB
+111.c136f210df64d766.js       | -                          |  34.96 kB |                 9.93 kB
+667.d6ba3946f789e3be.js       | -                          |  25.34 kB |                 5.81 kB
+19.e153ee565201c656.js        | -                          |  14.43 kB |                 4.72 kB
+257.43b8989253063351.js       | -                          |  14.32 kB |                 4.38 kB
+231.3d2256c50387bf6b.js       | -                          |  12.14 kB |                 4.01 kB
+common.a02bf1069690030e.js    | common                     |  10.35 kB |                 3.28 kB
+345.8897bd47c5634896.js       | -                          |   9.16 kB |                 2.79 kB
+440.1c4bbaf095a2f4f9.js       | -                          |   5.80 kB |                 1.98 kB
+446.dcf0b6806144db8c.js       | bootstrap                  | 512 bytes |               314 bytes
+                              | -                          |   0 bytes |                       -
+                              | __federation_expose_Routes |   0 bytes |                       -
+                              | -                          |   0 bytes |                       -
+                              | -                          |   0 bytes |                       -
+                              | -                          |   0 bytes |                       -
+                              | -                          |   0 bytes |                       -
+Build at: 2026-01-21T06:06:35.152Z - Hash: 6392c64b16aa3989 - Time: 2509ms
+Warning: /Users/rawal/work/PRIMENG/apps/tools/operation_names/src/app/remote-entry/nx-welcome.ts-angular-inline--1.css exceeded maximum budget. Budget 4.00 kB was not met by 3.03 kB with a total of 7.03 kB.
+Warning: bundle initial exceeded maximum budget. Budget 500.00 kB was not met by 12.60 kB with a total of 512.60 kB.
+> nx run clear_session:build:production  [local cache]
+> nx run clear_session:build:production
+⠋ Generating browser application bundles (phase: setup)...    TypeScript compiler options "target" and "useDefineForClassFields" are set to "ES2022" and "false" respectively by the Angular CLI. To control ECMA version and features use the Browserslist configuration. For more information, see https://angular.dev/tools/cli/build#configuring-browser-compatibility
+    NOTE: You can set the "target" to "ES2022" in the project's tsconfig to remove this warning.
+⠙ Generating browser application bundles (phase: setup)...(node:16899) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ Browser application bundle generation complete.
+✔ Copying assets complete.
+✔ Index html generation complete.
+Initial chunk files           | Names                      |  Raw size | Estimated transfer size
+remoteEntry.mjs               | clear_session              | 204.33 kB |                       -
+polyfills.a0dd488790fcac0f.js | polyfills                  | 114.64 kB |                32.66 kB
+main.7939468e9f7ed736.js      | main                       |  79.02 kB |                21.48 kB
+styles.ef46db3751d8e999.css   | styles                     |   0 bytes |                       -
+                              | Initial total              | 397.99 kB |                54.14 kB
+Lazy chunk files              | Names                      |  Raw size | Estimated transfer size
+295.b6aaa01acbb41d8c.js       | -                          | 298.87 kB |                84.90 kB
+451.2c6c095492c3be07.js       | -                          |  93.17 kB |                22.59 kB
+705.1aca7ad3b9a60666.js       | -                          |  72.44 kB |                19.02 kB
+111.6369d2f345733198.js       | -                          |  33.67 kB |                 9.51 kB
+329.c54a11cc46148ba1.js       | -                          | [22[39mm 25.07 kB |                 5.71 kB
+567.d800b3bb4890e905.js       | -                          |  23.13 kB |                 6.48 kB
+203.0c387b3e6f8785cd.js       | -                          |  15.70 kB |                 5.08 kB
+440.09629dd9a31b2fd2.js       | -                          |   5.80 kB |                 1.98 kB
+common.d5a789f492678338.js    | common                     |   4.41 kB |                 1.75 kB
+588.fbaa5b85762390e5.js       | bootstrap                  | 435 bytes |               267 bytes
+                              | -                          |   0 bytes |                       -
+                              | __federation_expose_Routes |   0 bytes |                       -
+                              | -                          |   0 bytes |                       -
+                              | -                          |   0 bytes |                       -
+Build at: 2026-01-21T06:06:34.800Z - Hash: 11ecd3e960acfc4f - Time: 2158ms
+Warning: /Users/rawal/work/PRIMENG/apps/tools/clear-session/src/app/remote-entry/nx-welcome.ts-angular-inline--1.css exceeded maximum budget. Budget 4.00 kB was not met by 3.03 kB with a total of 7.03 kB.
+> nx run person:build:production  [local cache]
+> nx run person:build:production
+⠋ Generating browser application bundles (phase: setup)...    TypeScript compiler options "target" and "useDefineForClassFields" are set to "ES2022" and "false" respectively by the Angular CLI. To control ECMA version and features use the Browserslist configuration. For more information, see https://angular.dev/tools/cli/build#configuring-browser-compatibility
+    NOTE: You can set the "target" to "ES2022" in the project's tsconfig to remove this warning.
+⠙ Generating browser application bundles (phase: setup)...(node:17989) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ Browser application bundle generation complete.
+✔ Copying assets complete.
+✔ Index html generation complete.
+Initial chunk files           | Names                      |  Raw size | Estimated transfer size
+remoteEntry.mjs               | person                     | 283.58 kB |                       -
+polyfills.ef3b01dbf2374200.js | polyfills                  | 172.93 kB |                36.25 kB
+main.3a80454d65c451b8.js      | main                       | 138.53 kB |                25.07 kB
+styles.bb8f5f3883b752ef.css   | styles                     | 116.57 kB |                10.10 kB
+                              | Initial total              | 711.62 kB |                71.41 kB
+Lazy chunk files              | Names                      |  Raw size | Estimated transfer size
+295.4e767748f62a9510.js       | -                          | 298.85 kB |                84.84 kB
+7336.b45cb513243a489f.js      | bootstrap                  | 106.31 kB |                 9.86 kB
+6451.beadb8a6decc95ed.js      | -                          |  93.15 kB |                22.61 kB
+2705.903f62d93f53be45.js      | -                          |  72.43 kB |                19.00 kB
+3700.a029b5107bdd3315.js      | -                         [39m[2m |  68.56 kB |                17.74 kB
+2481.40162b1961cf1b89.js      | -                          |  43.18 kB |                 7.51 kB
+3111.f93e23d9186411af.js      | -                          |  33.65 kB |                 9.47 kB
+9871.46a88faa51574e6b.js      | -                          |  31.78 kB |                 8.53 kB
+common.0a22c1d7df4fcea2.js    | common                     |  28.12 kB |                 7.28 kB
+2900.019cacf44bbbe9c4.js      | -                          |  25.61 kB |                 5.92 kB
+9070.25fc17fb9a072407.js      | -                          |  19.72 kB |                 6.36 kB
+3319.849c1cd6ba832f3a.js      | -                          |  18.92 kB |                 6.26 kB
+1455.48fe1bebf82241c8.js      | -                          |  16.38 kB |                 4.21 kB
+1203.56dfee7031b99435.js      | -                          |  15.68 kB |                 5.07 kB
+4257.4ddbb1d473caca86.js      | -                          |  14.30 kB |                 4.39 kB
+848.c5e5933db63b9e76.js       | -                          |  13.11 kB |                 4.02 kB
+4487.b7ca31d8a3327f0b.js      | -                          |  11.80 kB |                 3.16 kB
+345.2ef3a92a5e211f87.js       | -                          |   9.14 kB |                 2.79 kB
+5967.cd05cc73f7682bfb.js      | -                          |   8.48 kB |                 2.62 kB
+7215.6852a57bce88ec12.js      | -                          |   8.23 kB |                 2.67 kB
+7240.a83a83f1fcb0cee9.js      | -                          |   7.89 kB |                 2.99 kB
+7316.61b92155c1cfac1c.js      | -                          |   7.59 kB |                 2.84 kB
+3602.03403f0f00c7e240.js      | -                          |   7.50 kB |                 2.82 kB
+5480.b68ee1094f0cd5cd.js      | -                          |   7.46 kB |                 2.91 kB
+9410.dfacf85f9b85d3e1.js      | -                          |   7.43 kB |                 2.85 kB
+1036.648b8fac7a7bbc7a.js      | -                          |   7.20 kB |                 2.70 kB
+9173.e0535adc9bd0191d.js      | -                          |   7.01 kB |                 2.69 kB
+1230.a909be53447ab89f.js      | -                          |   6.95 kB |                 2.61 kB
+9155.71a23cdc36121673.js      | -                          |   6.94 kB |                 2.72 kB
+2622.0a2d8f1750bc1d38.js      | -                          |   6.93 kB |                 2.69 kB
+7263.c08a1996b11cf99c.js      | -                          |   6.93 kB |                 2.69 kB
+8852.9e39b78064c88350.js      | -                          |   6.92 kB |                 2.68 kB
+8554.3dad3858d9c50b71.js      | -                          |   6.91 kB |                 2.65 kB
+5885.0de9ce3d4153251e.js      | -                          |   6.73 kB |                 2.49 kB
+5107.44eb3811d5a286e0.js      | -                          |   6.62 kB |                 2.57 kB
+8042.80a9508d0af6766c.js      | -                          |   6.62 kB |                 2.45 kB
+7826.2a2c08bb8b849742.js      | -                          |   6.59 kB |                 2.54 kB
+162.18bc04d71d8ef9ae.js       | -                          |   6.57 kB |                 2.44 kB
+3425.e77d99b58be11714.js      | -                          |   6.46 kB |                 2.50 kB
+9003.eea8bb304ee0fa42.js      | -                          |   [[39m36m6.38 kB |                 2.35 kB
+4501.e74dbee5fd9a6b56.js      | -                          |   6.29 kB |                 2.40 kB
+8338.0705a7358de51f37.js      | -                          |   6.12 kB |                 2.32 kB
+9082.328429ccef5205b1.js      | -                          |   6.12 kB |                 2.33 kB
+9265.107b31478db38f68.js      | -                          |   6.11 kB |                 2.38 kB
+8701.821eff4a26505765.js      | -                          |   6.09 kB |                 2.33 kB
+5842.90ed65fe0eaebc0b.js      | -                          |   6.05 kB |                 2.36 kB
+3088.3da15fee86d65aa9.js      | -                          |   5.99 kB |                 2.30 kB
+5454.c0ca7e4a4503b4fd.js      | -                          |   5.92 kB |                 2.18 kB
+3440.dcf55424b960e2f8.js      | -                          |   5.79 kB |                 1.98 kB
+7437.66fad51a36aa4869.js      | -                          |   4.13 kB |               528 bytes
+321.9722f14e3f358710.js       | -                          |   3.89 kB |                 1.40 kB
+797.9722f14e3f358710.js       | [22[39mm-                          |   3.89 kB |                 1.40 kB
+2702.9722f14e3f358710.js      | -                          |   3.89 kB |                 1.40 kB
+3178.9722f14e3f358710.js      | -                          |   3.89 kB |                 1.40 kB
+5559.9722f14e3f358710.js      | -                          |   3.89 kB |                 1.40 kB
+7940.9722f14e3f358710.js      | -                          |   3.89 kB |                 1.40 kB
+9744.9d553078dc8829e9.js      | -                          |   3.17 kB |                 1.27 kB
+4544.235bf7e24a8e9b4c.js      | -                          |   2.66 kB |                 1.04 kB
+9789.4bb6152766bd3516.js      | -                          |   2.61 kB |                 1.12 kB
+7824.4f7ef17b9be68a77.js      | -                          |   2.24 kB |               988 bytes
+7734.47e0da78b66c6585.js      | -                          |   2.18 kB |               983 bytes
+9380.1612d48792a7fc6e.js      | -                          |   2.15 kB |               839 bytes
+931.4af3fe02c632ecd5.js       | -                          |   2.12 kB |               960 bytes
+[[39m0m7939.a2be65a1dd5dc2b9.js      | -                          |   2.12 kB |               969 bytes
+1512.dbcf2a06aac11465.js      | -                          |   1.96 kB |               892 bytes
+7913.f24ca26391babcfc.js      | -                          |   1.91 kB |               871 bytes
+662.3382f5b07865760e.js       | -                          |   1.90 kB |               872 bytes
+3306.ea097491b6440729.js      | -                          |   1.78 kB |               836 bytes
+7529.37ddead54d710229.js      | -                          |   1.70 kB |               787 bytes
+2963.4bef2c12b5a7c2d7.js      | -                          |   1.61 kB |               769 bytes
+9752.09349b07d4c7c49f.js      | -                          |   1.60 kB |               773 bytes
+2423.d64ae641ba785b19.js      | -                          |   1.58 kB |               779 bytes
+8807.81cbc0d8a9325370.js      | -                          |   1.58 kB |               762 bytes
+8148.e43bcfbd8d3f0ca7.js      | -                          |   1.58 kB |               759 bytes
+2080.d34512609bb980d8.js      | -                          |   1.58 kB |               753 bytes
+8439.a6a5323b46310d23.js      | -                          |   1.57 kB |               756 bytes
+8263.891fc578703b6827.js      | -                          |   1.56 kB |               745 bytes
+2016.d7d15a15a7c79427.js      | -                          |   1.51 kB |               746 bytes
+8196.79892c664b65ff4f.js      | -                          |   1.50 kB |               734 bytes
+5434.82127d3921aeaa15.js      | -                          |   1.32 kB |               636 bytes
+6872.8aaad412291699a7.js      | -                          | 817 bytes |               412 bytes
+                              | -                          |   0 bytes |                       -
+                              | -                          |   0 bytes |                       -
+                              | __federation_expose_Routes |   0 bytes |                       -
+                              | -                          |   0 bytes |                       -
+                              | -                          |   0 bytes |                       -
+                              | -                          |   0 bytes | [39m[22m                      -
+                              | -                          |   0 bytes |                       -
+                              | -                          |   0 bytes |                       -
+                              | -                          |   0 bytes |                       -
+                              | -                          |   0 bytes |                       -
+                              | -                          |   0 bytes |                       -
+                              | -                          |   0 bytes |                       -
+                              | -                          |   0 bytes |                       -
+Build at: 2026-01-21T06:14:08.752Z - Hash: 5446187486aab03b - Time: 3122ms
+Warning: /Users/rawal/work/PRIMENG/apps/entities/person/src/app/remote-entry/nx-welcome.ts-angular-inline--1.css exceeded maximum budget. Budget 4.00 kB was not met by 3.03 kB with a total of 7.03 kB.
+Warning: bundle initial exceeded maximum budget. Budget 500.00 kB was not met by 211.62 kB with a total of 711.62 kB.
+> nx run vehicle:build:production  [local cache]
+> nx run vehicle:build:production
+⠋ Generating browser application bundles (phase: setup)...    TypeScript compiler options "target" and "useDefineForClassFields" are set to "ES2022" and "false" respectively by the Angular CLI. To control ECMA version and features use the Browserslist configuration. For more information, see https://angular.dev/tools/cli/build#configuring-browser-compatibility
+    NOTE: You can set the "target" to "ES2022" in the project's tsconfig to remove this warning.
+⠙ Generating browser application bundles (phase: setup)...(node:19073) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ Browser application bundle generation complete.
+✔ Copying assets complete.
+✔ Index html generation complete.
+Initial chunk files           | Names                      |  Raw size | Estimated transfer size
+remoteEntry.mjs               | vehicle                    | 213.36 kB |                       -
+polyfills.ae76680142d4780c.js | polyfills                  | 120.83 kB |                33.24 kB
+styles.cbbcca7056d0baa4.css   | styles                     | 103.79 kB |                 7.66 kB
+main.820f2f1b7cd4fcd2.js      | main                       |  86.61 kB |                22.13 kB
+                              | Initial total              | 524.59 kB |                63.03 kB
+Lazy chunk files              | Names                      |  Raw size | Estimated transfer size
+295.96528a7413a2955f.js       | -                          | 298.86 kB |                84.92 kB
+469.d77cd25d1c6f7c9e.js       | bootstrap                  | 106.31 kB |                 9.84 kB
+615.200ea63887ae4c18.js       | -                          |  95.09 kB |                23.30 kB
+810.d7c85ee5b4d049bc.js       | -                          |  75.45 kB |                10.54 kB
+705.966322cabd9bcb6a.js       | -                         [39m[2m |  72.43 kB |                19.01 kB
+700.53a2062b6c16678c.js       | -                          |  68.56 kB |                17.75 kB
+111.1e2feae6b27487d7.js       | -                          |  34.94 kB |                 9.95 kB
+847.ea1473fe64bfb08b.js       | -                          |  25.30 kB |                 5.82 kB
+70.f9b2a021f49bd051.js        | -                          |  19.72 kB |                 6.36 kB
+779.60d1148547c38c8a.js       | -                          |  19.54 kB |                 4.59 kB
+common.608a813c6c966887.js    | common                     |  17.03 kB |                 4.95 kB
+848.a9ec832e2f727755.js       | -                          |  16.75 kB |                 5.17 kB
+555.460d1083a3277396.js       | -                          |  15.10 kB |                 4.94 kB
+19.3d3ab40f2b55c14f.js        | -                          |  14.41 kB |                 4.74 kB
+257.9836fb7765efff1d.js       | -                          |  14.30 kB |                 4.39 kB
+231.a774f5a568cfa8a2.js       | -                          |  12.12 kB |                 4.01 kB
+753.0cafe5922272cff5.js       | -                          |  12.07 kB |                 3.96 kB
+345.60ec0bf633f17b29.js       | -                          |   9.15 kB |                 2.78 kB
+440.f484533611779fce.js       | -                          |   5.79 kB |                 1.97 kB
+797.2d4787799ddc2cc4.js       | -                          |   3.65 kB |                 1.29 kB
+744.364652a214eef469.js       | -                          |   1.25 kB |               664 bytes
+                              | -                          |   0 bytes |                       -
+                              | -                          |   0 bytes |                       -
+                              | __federation_expose_Routes |   0 bytes |                       -
+                              | -                          |   0 bytes |                       -
+                              | -                          |   0 bytes |                       -
+                              | -                          |   0 bytes |                       -
+                              | -                          |   0 bytes |                       -
+Build at: 2026-01-21T06:23:14.374Z[39m[39m - Hash: e66bf5f72e10f1c4 - Time: 3379ms
+Warning: /Users/rawal/work/PRIMENG/apps/entities/vehicle/src/app/remote-entry/nx-welcome.ts-angular-inline--1.css exceeded maximum budget. Budget 4.00 kB was not met by 3.03 kB with a total of 7.03 kB.
+Warning: bundle initial exceeded maximum budget. Budget 500.00 kB was not met by 24.59 kB with a total of 524.59 kB.
+> nx run shell:build:production
+⠋ Generating browser application bundles (phase: setup)...    TypeScript compiler options "target" and "useDefineForClassFields" are set to "ES2022" and "false" respectively by the Angular CLI. To control ECMA version and features use the Browserslist configuration. For more information, see https://angular.dev/tools/cli/build#configuring-browser-compatibility
+    NOTE: You can set the "target" to "ES2022" in the project's tsconfig to remove this warning.
+⠙ Generating browser application bundles (phase: setup)...(node:21251) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ Browser application bundle generation complete.
+✔ Copying assets complete.
+✔ Index html generation complete.
+Initial chunk files           | Names         |  Raw size | Estimated transfer size
+runtime.5efa537fa1257e49.js   | runtime       | 174.41 kB |                27.19 kB
+styles.bb8f5f3883b752ef.css   | styles        | 116.57 kB |                10.10 kB
+polyfills.d8cdbd3f41e351ea.js | polyfills     |  34.83 kB |                11.34 kB
+main.31828ecf3756a4bd.js      | main          | 651 bytes |               284 bytes
+                              | Initial total | 326.46 kB |                48.90 kB
+Lazy chunk files              | Names         |  Raw size | Estimated transfer size
+295.757b2f033cb92632.js       | -             | 298.85 kB |                85.01 kB
+91.e0034db64781c1c3.js        | -             | 203.76 kB |                31.23 kB
+9083.e683de57d822339e.js      | bootstrap     | 130.85 kB |                14.78 kB
+4602.8677aad81e9845cc.js      | -             | 129.46 kB |                27.56 kB
+9951.40aba13389062a44.js      | -             | 117.40 kB |                18.78 kB
+common.ff36d1aa712bd14e.js    | common        | [[39m22m109.93 kB |                20.11 kB
+7365.7ae7dbc2df1ab25d.js      | -             |  95.97 kB |                23.59 kB
+2705.4bc2d41ebbcdfe9c.js      | -             |  72.43 kB |                18.96 kB
+7897.6210d40b8bf7255f.js      | -             |  67.01 kB |                12.08 kB
+4341.c3a205b7a19d6a64.js      | -             |  66.72 kB |                12.01 kB
+6449.f0974aacf8dbec52.js      | -             |  65.10 kB |                17.18 kB
+7697.c9bd24c457ce68b7.js      | -             |  57.62 kB |                10.69 kB
+7480.858bf5e028ffc60d.js      | -             |  42.20 kB |                 7.90 kB
+1141.ebaa01dcd27fcfc5.js      | -             |  39.33 kB |                 6.16 kB
+3111.4dfd0492178b17fe.js      | -             |  35.79 kB |                10.26 kB
+9071.1ddcd2b21a516521.js      | -             |  28.95 kB |                 6.75 kB
+5779.d07963ec312e2d66.js      | -             |  27.95 kB |                 7.22 kB
+3854.1672e5db2ddd809f.js      | -             |  27.95 kB |                 4.97 kB
+2609.05c369f59c98f218.js      | -             |  26.69 kB |                 6.65 kB
+9998.6608f531fa7de244.js      | -             |  25.34 kB |                 5.14 kB
+5192.0cb4a9ae72cef01b.js      | -             |  25.10 kB |                 5.73 kB
+9070.a527b9c134e8fa61.js      | -             |  19.72 kB |                 6.37 kB
+3319.1444be3988bf287a.js      | -             |  19.27 kB |                 6.35 kB
+5114.9d25100a9b7968f9.js      | -             |  18.04 kB |                 3.37 kB
+9335.10abfe7e928ce0c7.js      | -             |  16.55 kB |                 3.79 kB
+1455.a55bdb7c80f4963e.js      | -             |  16.38 kB |                 4.21 kB
+8542.86fb8f4d0957eb21.js      | -             |  15.37 kB |                 3.48 kB
+4257.479cb4ce4f9a5f7c.js      | -             |  14.30 kB |                 4.39 kB
+9344.7c9f09cb55b730f8.js      | -             |  13.74 kB |                 4.45 kB
+9744.57b4a86db831f0ed.js      | -             |  13.47 kB |                 4.42 kB
+848.6b81d4d7bc8d4044.js       | -             |  13.11 kB |                 4.00 kB
+5430.beac042df6f807e9.js      | -             |  12.97 kB |                 3.09 kB
+345.e2c98e67ecab32e7.js       | -             |   9.14 kB |                 2.79 kB
+3440.0227204d9495c6e1.js      | -             |   5.79 kB |                 1.98 kB
+4420.dafe7b3110505c2f.js      | -             |   4.84 kB |                 1.61 kB
+9195.85e61e37474d262d.js      | -             |   4.65 kB |                 1.29 kB
+1514.d381d9485eb6c416.js      | -             |   4.61 kB |                 1.20 kB
+7437.28102e57c5886b2e.js      | -             |   4.13 kB |               529 bytes
+9148.ff1b564733dd8562.js      | -             |   4.06 kB |                 1.64 kB
+8472.adba57d550f75190.js      | -             |   3.77 kB |                 1.49 kB
+9214.5e1a4d21576393f9.js      | -             |   3.67 kB |                 1.49 kB
+6004.17c8d935587f7caf.js      | -             |   3.63 kB |                 1.57 kB
+2014.e436af261ef5ff56.js      | -             |   3.60 kB |                 1.50 kB
+2816.9b5fab4857ddcfb0.js      | -             |   3.37 kB |                 1.39 kB
+8137.4936c5deeaa152b7.js      | -             |   3.19 kB |                 1.35 kB
+1962.9ec9a9335f629687.js      | -             |   3.12 kB |                 1.27 kB
+7127.4303d1963b760190.js      | -             |   3.11 kB |                 1.35 kB
+2330.8c6345c3c6558a54.js      | -             |   3.10 kB |                 1.35 kB
+5043.88595c9d17dc8c2e.js      | -             |   3.10 kB |                 1.35 kB
+1400.ccb7cb94705a4b06.js      | -             |   3.09 kB |                 1.35 kB
+2502.d9c0bab54e0b7cf3.js      | -             |   3.08 kB |                 1.32 kB
+9329.e90097b031455d7f.js      | -             |   2.90 kB |                 1.15 kB
+9455.0eef3f743037d8b3.js      | -             |   2.79 kB |                 1.22 kB
+2950.e831b93497cbd359.js      | -             |   2.79 kB |                 1.10 kB
+5998.997abe68ff88e812.js      | -             |   2.76 kB |                 1.21 kB
+1470.48fd79a21491142b.js      | -             |   2.75 kB |                 1.08 kB
+4544.03429fef01b2c8f4.js      | -             |   2.66 kB |                 1.03 kB
+8757.89d4ba8f827eb0f5.js      | -             |   2.63 kB |                 1.18 kB
+9789.e350573147f5eea4.js      | -             |   2.60 kB |                 1.12 kB
+6439.2729afa771962dd4.js      | -             |   2.55 kB |                 1.02 kB
+1145.79b737c20a021869.js      | -             |   2.47 kB |                 1.08 kB
+2886.5d612e96e7939dc0.js      | -             |   2.29 kB |                 1.01 kB
+8262.164e215a537529a6.js      | -             |   2.29 kB |               994 bytes
+3949.0778835ae6855eca.js      | -             |   2.28 kB |                 1.05 kB
+4249.5de2dab9ae267bdd.js      | -             |   2.26 kB |               994 bytes
+7824.c37c7cfe61ad97bb.js      | -             |   2.24 kB |               992 bytes
+2489.cca772d8a10d3eb7.js      | -             |   2.23 kB |                 1.03 kB
+7734.5483d15efab9b54a.js      | -             |   2.18 kB |                 1.01 kB
+308.153a3465a963c7a7.js       | -             |   2.16 kB |               968 bytes
+9380.7a8fa681914de07a.js      | -             |   2.14 kB |               841 bytes
+931.7731c6fefc16024b.js       | -             |   2.12 kB |               965 bytes
+7939.a48cf7e0267495d6.js      | -             |   2.12 kB |               979 bytes
+6018.f1d07387346b3096.js      | -             |   2.10 kB |               862 bytes
+1512.75e335d0005435f5.js      | -             |   1.96 kB |               890 bytes
+7913.27510e7d08004c58.js      | -             |   1.91 kB |               870 bytes
+662.490615694d81e31e.js       | -             |   1.90 kB |               876 bytes
+3306.3057553a2ace1696.js      | -             |   1.77 kB |               844 bytes
+7529.949cb0e0d36352c0.js      | -             |   1.70 kB |               788 bytes
+2963.2958f3c4cf52f2d1.js      | -             |   1.60 kB |               778 bytes
+9752.86eb9a505216137a.js      | -             |   1.60 kB |               777 bytes
+2423.909e024e9a4b774a.js      | -             |   1.58 kB |               777 bytes
+8807.5d223bbfca47fffe.js      | -            [39m[2m |   1.58 kB |               769 bytes
+8148.932419d19ed37626.js      | -             |   1.58 kB |               771 bytes
+2080.092831977b2a4ded.js      | -             |   1.58 kB |               761 bytes
+8439.e4c0c5b40f9745f1.js      | -             |   1.57 kB |               757 bytes
+8263.a2a1af77472afade.js      | -             |   1.55 kB |               744 bytes
+2016.b9fa44d9c71acf0b.js      | -             |   1.51 kB |               746 bytes
+8196.cf3b956156fbbf33.js      | -             |   1.50 kB |               732 bytes
+5434.4d7981e498869ed1.js      | -             |   1.31 kB |               635 bytes
+6872.2a1dfab1275a5528.js      | -             | 815 bytes |               419 bytes
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -[[39m39m
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -            [39m[2m |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+                              | -             |   0 bytes |                       -
+Build at: 2026-01-21T06:33:08.173Z - Hash: ce3a2625c99edc8c - Time: 3876ms
+Warning: /Users/rawal/work/PRIMENG/apps/entities/person/src/app/remote-entry/nx-welcome.ts-angular-inline--3.css exceeded maximum budget. Budget 4.00 kB was not met by 3.03 kB with a total of 7.03 kB.
+Warning: /Users/rawal/work/PRIMENG/apps/entities/vehicle/src/app/remote-entry/nx-welcome.ts-angular-inline--5.css exceeded maximum budget. Budget 4.00 kB was not met by 3.03 kB with a total of 7.03 kB.
+Warning: /Users/rawal/work/PRIMENG/apps/shell/src/app/nx-welcome.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+Warning: /Users/rawal/work/PRIMENG/apps/shell/src/app/nx-welcome.ts-angular-inline--9.css exceeded maximum budget. Budget 4.00 kB was not met by 3.03 kB with a total of 7.03 kB.
+Warning: /Users/rawal/work/PRIMENG/apps/tools/clear-session/src/app/remote-entry/nx-welcome.ts-angular-inline--2.css exceeded maximum budget. Budget 4.00 kB was not met by 3.03 kB with a total of 7.03 kB.
+Warning: /Users/rawal/work/PRIMENG/apps/tools/operation_names/src/app/remote-entry/nx-welcome.ts-angular-inline--7.css exceeded maximum budget. Budget 4.00 kB was not met by 3.03 kB with a total of 7.03 kB.
+———————————————————————————————————————————————————————————————————————————————
+ NX   Successfully ran target build for project shell and 4 tasks it depends on (6s)
+Nx read the output from the cache instead of running the command for 4 out of 5 tasks.

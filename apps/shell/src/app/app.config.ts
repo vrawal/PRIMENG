@@ -1,5 +1,6 @@
 import {
   ApplicationConfig,
+  ErrorHandler,
   provideBrowserGlobalErrorListeners,
   provideZoneChangeDetection,
 } from '@angular/core';
@@ -9,6 +10,7 @@ import { provideHttpClient } from '@angular/common/http';
 import { appRoutes } from './app.routes';
 
 import { providePrimeNG } from 'primeng/config';
+import { GlobalErrorHandler } from './global-error.handler';
 import Aura from '@primeuix/themes/aura';
 import { definePreset } from '@primeuix/themes';
 import { MessageService } from 'primeng/api';
@@ -33,6 +35,7 @@ const MyPreset = definePreset(Aura, {
 
 export const appConfig: ApplicationConfig = {
   providers: [
+    { provide: ErrorHandler, useClass: GlobalErrorHandler },
     provideBrowserGlobalErrorListeners(),
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(appRoutes),
